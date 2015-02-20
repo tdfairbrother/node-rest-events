@@ -1,0 +1,10 @@
+{
+    "name": "express.jwt_auth",
+    "version": "0.0.1",
+    "main": "index.js",
+    "private": true,
+    "plugin": {
+        "consumes": ["middleware","log"],
+        "provides": []
+    }
+}
