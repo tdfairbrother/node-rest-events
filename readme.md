@@ -1,9 +1,9 @@
 Rest Events
 ====================
 
-[![Build Status](https://travis-ci.org/tdfairbrother/node-rest-events.svg)](https://travis-ci.org/tdfairbrother/node-rest-events)
+[![Build Status](https://semaphoreapp.com/api/v1/projects/93cc7cc8-e887-4e1b-868d-1484915757ce/359591/badge.png)](https://semaphoreapp.com/tdfairbrother/node-rest-events)
 
-[![Coverage Status](https://coveralls.io/repos/tdfairbrother/node-rest-events/badge.svg)](https://coveralls.io/r/tdfairbrother/node-rest-events)
+[![Coverage Status](https://coveralls.io/repos/tdfairbrother/node-rest-events/badge.svg?branch=master)](https://coveralls.io/r/tdfairbrother/node-rest-events?branch=master)
 
 Provides an express router and an event emitter that will trigger events on index, show, create, update and destroy.
 
