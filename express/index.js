@@ -4,7 +4,7 @@ var bodyParser = require('body-parser');
 var controller = require('./controller');
 var methodOverride = require('method-override');
 
-if (process.env.NODE_ENV !== 'production' && process.env.NODE_ENV !== 'staging'){ require('longjohn'); }
+if (process.env.NODE_ENV === 'development' || process.env.NODE_ENV !== 'test'){ require('longjohn'); }
 
 module.exports = function(options, imports, register){
     imports.log('express route').info('loading...');
