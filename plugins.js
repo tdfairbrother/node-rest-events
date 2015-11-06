@@ -13,6 +13,9 @@ module.exports = [
         packagePath:"./express.trigger"
     },
     {
+        packagePath:"./express.librato"
+    },
+    {
         packagePath:"./express.jwt_auth"
-    }
+    }    
 ]
