@@ -21,14 +21,9 @@ module.exports = function(options, imports, register){
 
     imports.log('librato').info('loading...');
 
-    var middleware = imports.middleware;
-    var config = {
-      email: options.email,
-      token: options.token,
-      prefix: options.prefix
-    }
+    var middleware = imports.middleware;    
 
-    librato.configure(config);
+    librato.configure(options);
     librato.start();    
 
     // Hook into the before middleware
