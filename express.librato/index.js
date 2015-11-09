@@ -7,8 +7,7 @@ var librato = require('librato-node');
     librato:{        
         tokein: 'xxx',
         email: 'xxx',
-        metricPrefix: 'xxx',
-        enabled: true        
+        prefix: 'xxx'
     }
 
  * @param options Object
@@ -18,8 +17,7 @@ var librato = require('librato-node');
 module.exports = function(options, imports, register){
     if (!options.token) { throw new Error('token is not defined') }
     if (!options.email) { throw new Error('email is not defined') }
-    if (!options.metricPrefix) { throw new Error('metricPrefix is not defined') }
-    if (!options.enabled) { throw new Error('metricPrefix is not defined') }
+    if (!options.prefix) { throw new Error('prefix is not defined') }
 
     imports.log('librato').info('loading...');
 
@@ -27,8 +25,7 @@ module.exports = function(options, imports, register){
     var config = {
       email: options.email,
       token: options.token,
-      interval: options.interval || 10,
-      metricPrefix: options.metricPrefix
+      prefix: options.prefix
     }
 
     librato.configure(config);
